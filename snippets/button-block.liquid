@@ -69,7 +69,7 @@
         {% endif %}
         {{ button_style | default: 'btn--primary' }}"
     >
-      <span>{{ label }}</span>
+      <span>{% if label == "Read more" %}{{ label }}<span class="visually-hidden">&nbsp;about {{ aria_label }}</span>{% else %} {{ label }}{% endif %}</span>
     </{{ button_tag }}>
   </div>
 
