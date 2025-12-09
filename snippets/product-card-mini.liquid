@@ -125,13 +125,13 @@
 
     <div class="product-card-mini__meta fs-body-75">
       <div class="product-card-mini__text ff-body">
-        <h4 class="product-card-mini__product-title fs-product-card-title">
+        <p class="product-card-mini__product-title fs-product-card-title">
           {%- if placeholder or prod == blank -%}
             {{ 'homepage.onboarding.product_title' | t }}
           {%- else -%}
             <a href="{{ prod.url }}">{{ prod.title }}</a>
           {%- endif -%}
-        </h4>
+        </p>
 
         {% if placeholder or prod == blank %}
           {{ 9999 | money }}

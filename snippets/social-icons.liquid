@@ -26,11 +26,11 @@
         <li>
           <a
             href="{{ settings[social_link] }}"
-            title="{{ 'sections.footer.social_platform' | t: name: shop.name, platform: social }}"
+            title="{{ 'sections.footer.social_platform' | t: name: shop.name, platform: social }}. Opens External webpage"
             target="_blank"
             rel="noopener"
           >
-            {% render 'icon' with icon: social_handle %}
+            {% render 'icon', icon: social_handle %}
           </a>
         </li>
       {%- endif -%}
